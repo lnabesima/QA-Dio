@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWAG</projectKey>
+    <exportDate>2023-11-04 11:48:08 UTC</exportDate>
+    <folders>
+        <folder fullPath="Admin" index="2"/>
+    </folders>
+    <testCases>
+        <testCase id="109403348" key="SWAG-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Nabesima</createdBy>
+            <createdOn>2023-11-04 11:10:01 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Admin]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-5</key>
+                    <summary><![CDATA[Como administrador, desejo acessar uma página para atualizar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Administrador tenta acessar a tela de gerenciamento de produto]]></name>
+            <owner>712020:45ec4287-0904-4fef-842e-55b0346215fb</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o administrador está em sua área logado
+When clicar no botão de gerenciamento de produtos
+Then deve ser direcionado para a tela de gerenciamento de produtos.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="109403349" key="SWAG-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Nabesima</createdBy>
+            <createdOn>2023-11-04 11:11:04 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Admin]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-5</key>
+                    <summary><![CDATA[Como administrador, desejo acessar uma página para atualizar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Administrador tenta adicionar um produto novo com todos os dados necessários;]]></name>
+            <owner>712020:45ec4287-0904-4fef-842e-55b0346215fb</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o administrador está na tela de gerenciamento de produtos
+When preencher corretamente todos os dados necessários para a inserção de um novo produto
+And clicar no botão "Cadastrar"
+Then deve ser criado um novo registro no banco de dados com as informações passadas
+And deve ser exibida uma mensagem informando sucesso.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="109403501" key="SWAG-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Nabesima</createdBy>
+            <createdOn>2023-11-04 11:43:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Admin]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-5</key>
+                    <summary><![CDATA[Como administrador, desejo acessar uma página para atualizar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Administrador tenta adicionar um produto novo com alguns dados necessários apenas;]]></name>
+            <owner>712020:45ec4287-0904-4fef-842e-55b0346215fb</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar tela de gerenciamento de produtos.]]></description>
+                        <expectedResult><![CDATA[P&aacute;gina de gerenciamento de produtos renderizada em tela e dispon&iacute;vel para intera&ccedil;&atilde;o.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Preencher parcialmente o formul&aacute;rio de informa&ccedil;&otilde;es do produto apenas parcialmente (faltando dados requeridos).]]></description>
+                        <expectedResult><![CDATA[&lt;Sem resultado&gt;]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Clicar no bot&atilde;o &quot;Criar produto&quot;.]]></description>
+                        <expectedResult><![CDATA[<ol><li>Os campos obrigat&oacute;rios devem ganhar borda vermelha;</li><li>Deve ser exibida uma mensagem por meio de uma modal informando que todos os dados devem ser preenchidos e pedindo que o usu&aacute;rio verifique os campos em vermelho.</li></ol>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="109403508" key="SWAG-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Nabesima</createdBy>
+            <createdOn>2023-11-04 11:45:27 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Admin]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-5</key>
+                    <summary><![CDATA[Como administrador, desejo acessar uma página para atualizar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Administrador tenta adicionar um produto sem dados algum inserido;]]></name>
+            <owner>712020:45ec4287-0904-4fef-842e-55b0346215fb</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar tela de gerenciamento de produtos.]]></description>
+                        <expectedResult><![CDATA[P&aacute;gina de gerenciamento de produtos renderizada em tela e dispon&iacute;vel para intera&ccedil;&atilde;o.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[N&atilde;o inserir dado algum no formul&aacute;rio de cria&ccedil;&atilde;o de produto.]]></description>
+                        <expectedResult><![CDATA[O bot&atilde;o &quot;Criar produto&quot; deve permanecer desabilitado.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
